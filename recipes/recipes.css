@@ -1,0 +1,114 @@
+:root{
+    --headercolor: #d3a069;
+    --textheadercolor:#fffefc;
+    --bgcolor: #fffefc;
+    --textcolor: #07071c;
+    --titlesize: 5.5rem; /* For main title on index.html */
+    --h1size: 4rem; 
+    --h2size: 2rem;
+    --psize: 1.5rem;
+    --titlesize: 5.5rem;
+    --pixelfont: "Pixelify Sans", sans-serif;
+}
+ body{
+    margin: 0;
+    background-color: var(--bgcolor);
+} 
+
+
+.header-section{
+    background-color: var(--headercolor);
+    width: auto;
+    height: 30%;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.home-button a{
+    text-decoration: none;
+    color: var(--textheadercolor);
+    font-size: var(--psize);
+    font-family: var(--pixelfont);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.home-button a:hover{ /* for home button animation */
+    background-color: var(--textheadercolor);
+    color: var(--headercolor);
+    transition: 0.3s;
+}
+.header-image{
+    justify-self: center;
+    margin-top: 1rem;
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+}
+
+.header-section h1{
+    color: var(--textcolor);
+    font-size: var(--h1size);
+    font-family: var(--pixelfont);
+    text-align: center;
+    font-weight: Bold;
+    margin-top: 0.5rem;
+}
+.header-section p{
+    color: var(--textcolor);
+    font-size: var(--psize);
+    font-family: var(--pixelfont);
+    text-align: center;
+    margin-top: 1rem;
+    padding: 0 10rem 0 10rem;
+}
+
+.recipe-section{
+    font-family: var(--pixelfont);
+    padding: 5rem 10rem 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* media query for responsive design */
+@media (max-width: 900px) {
+    .header-section {
+        padding: 1rem;
+    }
+    .header-section h1 {
+        font-size: 2.5rem;
+    }
+    .header-section p {
+        padding: 0 2rem;
+        font-size: 1.2rem;
+    }
+    .header-image {
+        width: 10rem;
+        height: 10rem;
+    }
+    .recipe-section {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-section {
+        padding: 0.5rem;
+    }
+    .header-section h1 {
+        font-size: 1.5rem;
+    }
+    .header-section p {
+        padding: 0 0.5rem;
+        font-size: 1rem;
+    }
+    .header-image {
+        width: 7rem;
+        height: 7rem;
+    }
+    .recipe-section {
+        padding: 0.5rem;
+    }
+}
